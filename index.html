@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Receipt</title>
+  <link rel="stylesheet" href="./style .css">
+  <style> body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #bb0707;
+    border-radius: 8px ;
+    background-color: #082de85f  
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .header{
+    display: flex ;
+    background: linear-gradient(to right, #f58b11, #f0216d);
+justify-content: space-around;
+padding : 1%;
+  }
+  .pongal{
+    font-size: 30px;
+    /* text-align: center; */
+    margin-top: 100px;
+    margin-right: 20px;
+    color: #010c18;  
+  }
+  
+  .customer-info,
+  .items-list,
+  .total {
+    background: linear-gradient(to right, #f7c286, #feaecb);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .containe {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  .containe1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    font-size: x-large;
+    gap: 0px;
+    max-width: 800px;
+    margin: 20px auto;
+  
+    text-align: center;
+
+    background: linear-gradient(45deg, rgb(250, 38, 38), blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .denomination {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  h2{
+    text-align: center;
+
+    background: linear-gradient(45deg, rgb(8, 7, 7), blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+  }
+  /* footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(45deg, #ff8a00, #e52e71);
+    color: transparent;
+    background-clip: text;
+  } */
+
+  hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+  }
+
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1.5rem ;
+  }
+
+  .contact-info img {
+    width: 20px;
+    margin-right: 5px;
+    
+  }
+
+  .customer-info,
+  .items-list,
+  .total {
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    background: linear-gradient(to right, #f58b11, #f0216d);
+ 
+    text-align: center;
+    padding: 10px 0;
+    font-weight:300px;
+
+    color: #1d1a1a;
+    position: relative;
+    bottom: 0;
+    width: 3    0%;
+
+  }
+  .items-list div {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .items-list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  
+  .customer-info p,
+  .items-list span,
+  .total p {
+    margin: 8px 0;
+  }
+  
+  .total p {
+    font-size: 1.2em;
+  }
+  </style>
+</head>
+<body>
+  <div class="container" >
+    <header class="header">
+    <img src="./image/WhatsApp Image 2024-01-01 at 15.59.22_67ae4506.jpg" style="width: 200px; height:210px;"/>
+
+    <h1 class="pongal">பொங்கல் விளையாட்டு விழா</h1>
+    </header>
+    <hr>  
+    <section class="customer-info">
+      <h2 >வாடிக்கையாளர் தகவல்</h2>
+      <p id="cus_info"><strong>Name:</strong> John Doe</p>
+      <p id="cus_info"><strong>Invoice No:</strong> john@example.com</p>
+      <p id="cus_info"><strong>Customer Id:</strong> January 1, 2023</p>
+      <p id="cus_info"><strong>Date:</strong> January 1, 2023</p>
+    </section>
+<h3> Name: </h3>
+    <section class="items-list">
+      <h2 style="text-transform: capitalize;">Denomination</h2>
+      <!-- <ul>
+        <li><span>Product A</span><span>$20.00</span></li>
+        <li><span>Product B</span><span>$30.00</span></li>      
+      </ul> -->
+     
+    
+      <div class="containe">
+        <div class="denomination">500</div>
+        <div class="denomination">*</div>
+        <div class="denomination">0</div>
+    
+        <div class="denomination">0</div>
+ 
+        <!-- Add more denominations as needed -->
+      </div>
+      <div class="containe">
+        <div class="denomination">100</div>
+        <div class="denomination">*</div>
+        <div class="denomination">0</div>
+    
+        <div class="denomination">0</div>
+ 
+        <!-- Add more denominations as needed -->
+      </div><div class="containe">
+        <div class="denomination">50</div>
+        <div class="denomination">*</div>
+        <div class="denomination">0</div>
+    
+        <div class="denomination">0</div>
+ 
+        <!-- Add more denominations as needed -->
+      </div>
+      <div class="containe">
+        <div class="denomination">20</div>
+        <div class="denomination">*</div>
+        <div class="denomination">0</div>
+    
+        <div class="denomination">0</div>
+ 
+        <!-- Add more denominations as needed -->
+      </div>
+      <div class="containe">
+        <div class="denomination">10</div>
+        <div class="denomination">*</div>
+        <div class="denomination">0</div>
+    
+        <div class="denomination">0</div>
+ 
+        <!-- Add more denominations as needed -->
+      </div>
+
+    </section>
+
+    <section class="total">
+
+      <p><strong>Total Amount:</strong> ₹</p>
+  
+    </section>
+    
+
+    <footer>
+      <h2>நன்றி மீட்டுட்ம் வருக!</h2>
+      <hr>
+      <div class="contact-info">
+        
+        <p style="display: flex;">  <img src="./image/telephone.png" alt="">+91 6382461718</p>
+  
+        
+        <p  style="display: flex;"> <img src="./image/gmail.png" alt="">Manitech@gmail.com</p>
+  
+       
+        <p  style="display: flex;">  <img src="./image/web-link.png" alt="">WWW.MOITECH.COM</p>
+      </div>
+    </footer>
+  </div>
+
+
+</body> 
+</html>
